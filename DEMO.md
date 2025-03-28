@@ -89,4 +89,4 @@ Create a release of the project
 
 Run the CI without even checking out a branch
 
-`dagger -m github.com/kpenfound/greetings-api call all --source https://github.com/kpenfound/greetings-api#main --release --infisical-token $TOKEN`
+`dagger -m github.com/lamalex/greetings-api call all --source https://github.com/lamalex/greetings-api#main --release --infisical-token $TOKEN`

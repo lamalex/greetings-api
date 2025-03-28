@@ -28,21 +28,21 @@ func New(
 	// +ignore=[".git", "**/node_modules"]
 	source *dagger.Directory,
 	// +optional
-	// +default="github.com/kpenfound/greetings-api"
+	// +default="github.com/lamalex/greetings-api"
 	repo string,
 	// +optional
-	// +default="kylepenfound/greetings-api:latest"
+	// +default="lamalex/greetings-api:latest"
 	image string,
 	// +optional
 	// +default="dagger-demo"
 	app string,
 ) *Greetings {
 	g := &Greetings{
-		Source:   source,
-		Repo:     repo,
-		Image:    image,
-		App:      app,
-		Backend:  dag.Backend(source.WithoutDirectory("website")),
+		Source:  source,
+		Repo:    repo,
+		Image:   image,
+		App:     app,
+		Backend: dag.Backend(source.WithoutDirectory("website")),
 	}
 	g.Frontend = dag.Frontend(source.Directory("website"), g.Backend.Serve())
 	return g
