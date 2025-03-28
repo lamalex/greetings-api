@@ -15,5 +15,6 @@
   { "language": "indonesian", "greeting": "Halo Dunia!" },
   { "language": "japanese", "greeting": "こんにちは世界！" },
   { "language": "marathi", "greeting": "नमस्कार जग!" },
-  { "language": "telugu", "greeting": "హలో ప్రపంచం!" }
+  { "language": "telugu", "greeting": "హలో ప్రపంచం!" },
+  { "language": "klingon", "greeting": "nuqneH, qo'!" }
 ]
